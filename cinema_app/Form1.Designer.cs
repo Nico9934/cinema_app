@@ -42,12 +42,20 @@ namespace cinema_app
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.cmb_pelicula = new System.Windows.Forms.ComboBox();
-            this.cmb_formato = new System.Windows.Forms.ComboBox();
+            this.cmb_film = new System.Windows.Forms.ComboBox();
+            this.cmb_format = new System.Windows.Forms.ComboBox();
             this.cmb_sala = new System.Windows.Forms.ComboBox();
-            this.cmb_asiento = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cmb_hour = new System.Windows.Forms.ComboBox();
+            this.lbl_film = new System.Windows.Forms.Label();
+            this.lbl_format = new System.Windows.Forms.Label();
+            this.lbl_sala = new System.Windows.Forms.Label();
+            this.lbl_hour = new System.Windows.Forms.Label();
+            this.lbl_asiento = new System.Windows.Forms.Label();
+            this.btn_asiento = new System.Windows.Forms.Button();
+            this.btn_continue = new System.Windows.Forms.Button();
+            this.pnl_first = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.pnl_first.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,9 +72,9 @@ namespace cinema_app
             // 
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel10.Location = new System.Drawing.Point(13, 17);
+            this.panel10.Location = new System.Drawing.Point(12, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(313, 82);
+            this.panel10.Size = new System.Drawing.Size(382, 98);
             this.panel10.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -87,7 +95,7 @@ namespace cinema_app
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(339, 563);
+            this.panel2.Location = new System.Drawing.Point(220, 534);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 253);
             this.panel2.TabIndex = 3;
@@ -95,7 +103,7 @@ namespace cinema_app
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Location = new System.Drawing.Point(567, 563);
+            this.panel3.Location = new System.Drawing.Point(448, 534);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 253);
             this.panel3.TabIndex = 4;
@@ -103,7 +111,7 @@ namespace cinema_app
             // panel4
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.Location = new System.Drawing.Point(785, 563);
+            this.panel4.Location = new System.Drawing.Point(666, 534);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 253);
             this.panel4.TabIndex = 5;
@@ -111,7 +119,7 @@ namespace cinema_app
             // panel5
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.Location = new System.Drawing.Point(1007, 563);
+            this.panel5.Location = new System.Drawing.Point(888, 534);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 253);
             this.panel5.TabIndex = 5;
@@ -120,7 +128,7 @@ namespace cinema_app
             // 
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel6.Location = new System.Drawing.Point(341, 293);
+            this.panel6.Location = new System.Drawing.Point(222, 264);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 250);
             this.panel6.TabIndex = 5;
@@ -128,7 +136,7 @@ namespace cinema_app
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.Location = new System.Drawing.Point(569, 293);
+            this.panel7.Location = new System.Drawing.Point(450, 264);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 250);
             this.panel7.TabIndex = 6;
@@ -136,7 +144,7 @@ namespace cinema_app
             // panel8
             // 
             this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.Location = new System.Drawing.Point(787, 293);
+            this.panel8.Location = new System.Drawing.Point(668, 264);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 250);
             this.panel8.TabIndex = 6;
@@ -144,36 +152,39 @@ namespace cinema_app
             // panel9
             // 
             this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
-            this.panel9.Location = new System.Drawing.Point(1009, 293);
+            this.panel9.Location = new System.Drawing.Point(890, 264);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 250);
             this.panel9.TabIndex = 6;
             // 
-            // cmb_pelicula
+            // cmb_film
             // 
-            this.cmb_pelicula.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.cmb_pelicula.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmb_pelicula.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_pelicula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.cmb_pelicula.FormattingEnabled = true;
-            this.cmb_pelicula.Location = new System.Drawing.Point(296, 177);
-            this.cmb_pelicula.Name = "cmb_pelicula";
-            this.cmb_pelicula.Size = new System.Drawing.Size(265, 32);
-            this.cmb_pelicula.TabIndex = 7;
-            this.cmb_pelicula.SelectedIndexChanged += new System.EventHandler(this.cmb_pelicula_SelectedIndexChanged);
+            this.cmb_film.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cmb_film.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmb_film.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_film.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.cmb_film.FormattingEnabled = true;
+            this.cmb_film.Location = new System.Drawing.Point(14, 90);
+            this.cmb_film.Name = "cmb_film";
+            this.cmb_film.Size = new System.Drawing.Size(265, 32);
+            this.cmb_film.TabIndex = 7;
+            this.cmb_film.Text = "---Elige una pelicula---";
+            this.cmb_film.SelectedIndexChanged += new System.EventHandler(this.cmb_film_SelectedIndexChanged);
             // 
-            // cmb_formato
+            // cmb_format
             // 
-            this.cmb_formato.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.cmb_formato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmb_formato.Font = new System.Drawing.Font("Roboto", 12F);
-            this.cmb_formato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.cmb_formato.FormattingEnabled = true;
-            this.cmb_formato.Location = new System.Drawing.Point(598, 177);
-            this.cmb_formato.Name = "cmb_formato";
-            this.cmb_formato.Size = new System.Drawing.Size(205, 32);
-            this.cmb_formato.TabIndex = 8;
-            this.cmb_formato.Visible = false;
+            this.cmb_format.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cmb_format.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmb_format.Font = new System.Drawing.Font("Roboto", 12F);
+            this.cmb_format.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.cmb_format.FormattingEnabled = true;
+            this.cmb_format.Location = new System.Drawing.Point(293, 90);
+            this.cmb_format.Name = "cmb_format";
+            this.cmb_format.Size = new System.Drawing.Size(238, 32);
+            this.cmb_format.TabIndex = 8;
+            this.cmb_format.Text = "---Elige un formato---";
+            this.cmb_format.Visible = false;
+            this.cmb_format.SelectedIndexChanged += new System.EventHandler(this.cmb_format_SelectedIndexChanged);
             // 
             // cmb_sala
             // 
@@ -182,34 +193,141 @@ namespace cinema_app
             this.cmb_sala.Font = new System.Drawing.Font("Roboto", 12F);
             this.cmb_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
             this.cmb_sala.FormattingEnabled = true;
-            this.cmb_sala.Location = new System.Drawing.Point(836, 177);
+            this.cmb_sala.Location = new System.Drawing.Point(550, 90);
             this.cmb_sala.Name = "cmb_sala";
-            this.cmb_sala.Size = new System.Drawing.Size(180, 32);
+            this.cmb_sala.Size = new System.Drawing.Size(212, 32);
             this.cmb_sala.TabIndex = 9;
+            this.cmb_sala.Text = "---Elige una sala---";
             this.cmb_sala.Visible = false;
+            this.cmb_sala.SelectedIndexChanged += new System.EventHandler(this.cmb_sala_SelectedIndexChanged);
             // 
-            // cmb_asiento
+            // cmb_hour
             // 
-            this.cmb_asiento.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.cmb_asiento.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmb_asiento.Font = new System.Drawing.Font("Roboto", 12F);
-            this.cmb_asiento.FormattingEnabled = true;
-            this.cmb_asiento.Location = new System.Drawing.Point(1056, 177);
-            this.cmb_asiento.Name = "cmb_asiento";
-            this.cmb_asiento.Size = new System.Drawing.Size(200, 32);
-            this.cmb_asiento.TabIndex = 10;
-            this.cmb_asiento.Visible = false;
+            this.cmb_hour.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cmb_hour.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmb_hour.Font = new System.Drawing.Font("Roboto", 12F);
+            this.cmb_hour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.cmb_hour.FormattingEnabled = true;
+            this.cmb_hour.Location = new System.Drawing.Point(785, 90);
+            this.cmb_hour.Name = "cmb_hour";
+            this.cmb_hour.Size = new System.Drawing.Size(225, 32);
+            this.cmb_hour.TabIndex = 10;
+            this.cmb_hour.Text = "---Elige un horario---";
+            this.cmb_hour.Visible = false;
+            this.cmb_hour.SelectedIndexChanged += new System.EventHandler(this.cmb_hour_SelectedIndexChanged);
             // 
-            // label1
+            // lbl_film
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label1.Location = new System.Drawing.Point(318, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 24);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "ELIGE UNA PELICULA";
+            this.lbl_film.AutoSize = true;
+            this.lbl_film.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbl_film.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.lbl_film.Location = new System.Drawing.Point(34, 48);
+            this.lbl_film.Name = "lbl_film";
+            this.lbl_film.Size = new System.Drawing.Size(206, 24);
+            this.lbl_film.TabIndex = 11;
+            this.lbl_film.Text = "ELIGE UNA PELICULA";
+            // 
+            // lbl_format
+            // 
+            this.lbl_format.AutoSize = true;
+            this.lbl_format.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbl_format.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.lbl_format.Location = new System.Drawing.Point(289, 48);
+            this.lbl_format.Name = "lbl_format";
+            this.lbl_format.Size = new System.Drawing.Size(104, 24);
+            this.lbl_format.TabIndex = 12;
+            this.lbl_format.Text = "FORMATO";
+            this.lbl_format.Visible = false;
+            // 
+            // lbl_sala
+            // 
+            this.lbl_sala.AutoSize = true;
+            this.lbl_sala.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbl_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.lbl_sala.Location = new System.Drawing.Point(546, 48);
+            this.lbl_sala.Name = "lbl_sala";
+            this.lbl_sala.Size = new System.Drawing.Size(163, 24);
+            this.lbl_sala.TabIndex = 13;
+            this.lbl_sala.Text = "ELEGI UNA SALA";
+            this.lbl_sala.Visible = false;
+            // 
+            // lbl_hour
+            // 
+            this.lbl_hour.AutoSize = true;
+            this.lbl_hour.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbl_hour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.lbl_hour.Location = new System.Drawing.Point(783, 48);
+            this.lbl_hour.Name = "lbl_hour";
+            this.lbl_hour.Size = new System.Drawing.Size(188, 24);
+            this.lbl_hour.TabIndex = 14;
+            this.lbl_hour.Text = "ELEGI UN HORARIO";
+            this.lbl_hour.Visible = false;
+            // 
+            // lbl_asiento
+            // 
+            this.lbl_asiento.AutoSize = true;
+            this.lbl_asiento.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lbl_asiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.lbl_asiento.Location = new System.Drawing.Point(1036, 48);
+            this.lbl_asiento.Name = "lbl_asiento";
+            this.lbl_asiento.Size = new System.Drawing.Size(183, 24);
+            this.lbl_asiento.TabIndex = 15;
+            this.lbl_asiento.Text = "ELEGI UN ASIENTO";
+            this.lbl_asiento.Visible = false;
+            // 
+            // btn_asiento
+            // 
+            this.btn_asiento.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btn_asiento.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btn_asiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.btn_asiento.Location = new System.Drawing.Point(1053, 84);
+            this.btn_asiento.Name = "btn_asiento";
+            this.btn_asiento.Size = new System.Drawing.Size(147, 43);
+            this.btn_asiento.TabIndex = 16;
+            this.btn_asiento.Text = "ASIENTOS";
+            this.btn_asiento.UseVisualStyleBackColor = false;
+            this.btn_asiento.Visible = false;
+            this.btn_asiento.Click += new System.EventHandler(this.btn_asiento_Click);
+            // 
+            // btn_continue
+            // 
+            this.btn_continue.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_continue.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btn_continue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.btn_continue.Location = new System.Drawing.Point(886, 174);
+            this.btn_continue.Name = "btn_continue";
+            this.btn_continue.Size = new System.Drawing.Size(173, 41);
+            this.btn_continue.TabIndex = 17;
+            this.btn_continue.Text = "CONTINUAR";
+            this.btn_continue.UseVisualStyleBackColor = false;
+            this.btn_continue.Visible = false;
+            this.btn_continue.Click += new System.EventHandler(this.btn_continue_Click);
+            // 
+            // pnl_first
+            // 
+            this.pnl_first.Controls.Add(this.lbl_film);
+            this.pnl_first.Controls.Add(this.panel9);
+            this.pnl_first.Controls.Add(this.btn_continue);
+            this.pnl_first.Controls.Add(this.panel5);
+            this.pnl_first.Controls.Add(this.cmb_film);
+            this.pnl_first.Controls.Add(this.panel6);
+            this.pnl_first.Controls.Add(this.panel8);
+            this.pnl_first.Controls.Add(this.btn_asiento);
+            this.pnl_first.Controls.Add(this.panel4);
+            this.pnl_first.Controls.Add(this.cmb_format);
+            this.pnl_first.Controls.Add(this.panel7);
+            this.pnl_first.Controls.Add(this.lbl_asiento);
+            this.pnl_first.Controls.Add(this.panel3);
+            this.pnl_first.Controls.Add(this.cmb_sala);
+            this.pnl_first.Controls.Add(this.panel2);
+            this.pnl_first.Controls.Add(this.lbl_hour);
+            this.pnl_first.Controls.Add(this.cmb_hour);
+            this.pnl_first.Controls.Add(this.lbl_sala);
+            this.pnl_first.Controls.Add(this.lbl_format);
+            this.pnl_first.Location = new System.Drawing.Point(82, 127);
+            this.pnl_first.Name = "pnl_first";
+            this.pnl_first.Size = new System.Drawing.Size(1280, 720);
+            this.pnl_first.TabIndex = 18;
             // 
             // Form1
             // 
@@ -217,27 +335,16 @@ namespace cinema_app
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1493, 1034);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmb_asiento);
-            this.Controls.Add(this.cmb_sala);
-            this.Controls.Add(this.cmb_formato);
-            this.Controls.Add(this.cmb_pelicula);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnl_first);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.pnl_first.ResumeLayout(false);
+            this.pnl_first.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -254,12 +361,19 @@ namespace cinema_app
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        public  System.Windows.Forms.ComboBox cmb_pelicula;
-        public  System.Windows.Forms.ComboBox cmb_formato;
+        public  System.Windows.Forms.ComboBox cmb_film;
+        public  System.Windows.Forms.ComboBox cmb_format;
         public  System.Windows.Forms.ComboBox cmb_sala;
-        public  System.Windows.Forms.ComboBox cmb_asiento;
+        public  System.Windows.Forms.ComboBox cmb_hour;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_film;
+        private System.Windows.Forms.Label lbl_format;
+        private System.Windows.Forms.Label lbl_sala;
+        private System.Windows.Forms.Label lbl_hour;
+        private System.Windows.Forms.Label lbl_asiento;
+        private System.Windows.Forms.Button btn_asiento;
+        public  System.Windows.Forms.Button btn_continue;
+        private System.Windows.Forms.Panel pnl_first;
     }
 }
 
