@@ -22,7 +22,45 @@ namespace cinema_app
             cmb_film.DisplayMember = "Titulo";
             cmb_film.SelectedIndex = 0;
         }
-        
+        //public void ShowForm1()
+        //{
+        //    if (pnl_first.Controls.Count > 0) pnl_first.Controls.Clear();
+
+        //    // Reiniciar el formulario actual (Form1)
+        //    Form1 newForm1 = new Form1();
+        //    newForm1.TopLevel = false;
+        //    newForm1.FormBorderStyle = FormBorderStyle.None;
+        //    newForm1.Dock = DockStyle.Fill;
+        //    pnl_first.Controls.Add(newForm1);
+        //    pnl_first.Tag = newForm1;
+        //}
+
+        public void ShowForm1()
+        {
+            if (pnl_first.Controls.Count > 0)
+            {
+                foreach (Control control in pnl_first.Controls)
+                {
+                    control.Dispose();
+                }
+                pnl_first.Controls.Clear();
+            }
+
+            // Crear una nueva instancia del Form1 y configurar adecuadamente
+            Form1 newForm1 = new Form1
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+            pnl_first.Controls.Add(newForm1.pnl_first);
+            pnl_first.Controls.Remove(newForm1.panel1);
+            pnl_first.Tag = newForm1;
+            
+            newForm1.Show();
+        }
+
+
 
         private void cmb_film_SelectedIndexChanged(object sender, EventArgs e)
         {           
@@ -114,7 +152,7 @@ namespace cinema_app
             if (pnl_first.Controls.Count > 0) pnl_first.Controls.Clear();
        
             var form = Application.OpenForms.OfType<Form2>().FirstOrDefault();
-            Form2 second_form = form ?? new Form2();
+            Form2 second_form = form ?? new Form2(this);
             // Establece el formulario 2 como hijo del panel en Form1
             second_form.TopLevel = false;
             second_form.FormBorderStyle = FormBorderStyle.None;

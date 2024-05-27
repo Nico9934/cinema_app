@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,5 +14,6 @@ namespace cinema_app
         public List<string> Sala { get; set; }
         public List<string> Horario { get; set; }
         public string Id { get; set; }
+        public string Image { get; set; }
     }
 }

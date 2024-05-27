@@ -49,7 +49,7 @@
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.lbl_asientos = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
-            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_back_first = new System.Windows.Forms.Button();
             this.txt_tarjeta = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_finish = new System.Windows.Forms.Button();
@@ -281,18 +281,19 @@
             this.lbl_total.TabIndex = 19;
             this.lbl_total.Text = "TOTAL: ";
             // 
-            // btn_back
+            // btn_back_first
             // 
-            this.btn_back.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_back.Font = new System.Drawing.Font("Roboto", 12F);
-            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.btn_back.Location = new System.Drawing.Point(51, 32);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(173, 41);
-            this.btn_back.TabIndex = 21;
-            this.btn_back.Text = "VOLVER ATRAS";
-            this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Visible = false;
+            this.btn_back_first.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_back_first.Font = new System.Drawing.Font("Roboto", 12F);
+            this.btn_back_first.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.btn_back_first.Location = new System.Drawing.Point(51, 32);
+            this.btn_back_first.Name = "btn_back_first";
+            this.btn_back_first.Size = new System.Drawing.Size(173, 41);
+            this.btn_back_first.TabIndex = 21;
+            this.btn_back_first.Text = "VOLVER ATRAS";
+            this.btn_back_first.UseVisualStyleBackColor = false;
+            this.btn_back_first.Visible = false;
+            this.btn_back_first.Click += new System.EventHandler(this.btn_back_first_Click);
             // 
             // txt_tarjeta
             // 
@@ -371,7 +372,7 @@
             this.Controls.Add(this.btn_finish);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.txt_tarjeta);
-            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_back_first);
             this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.lbl_asientos);
             this.Controls.Add(this.lbl_horario);
@@ -424,7 +425,7 @@
         private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Label lbl_asientos;
         private System.Windows.Forms.Label lbl_total;
-        public System.Windows.Forms.Button btn_back;
+        public System.Windows.Forms.Button btn_back_first;
         private System.Windows.Forms.TextBox txt_tarjeta;
         private System.Windows.Forms.Panel panel5;
         public System.Windows.Forms.Button btn_finish;

@@ -373,7 +373,7 @@ namespace cinema_app
         private System.Windows.Forms.Label lbl_asiento;
         private System.Windows.Forms.Button btn_asiento;
         public  System.Windows.Forms.Button btn_continue;
-        private System.Windows.Forms.Panel pnl_first;
+        public  System.Windows.Forms.Panel pnl_first;
     }
 }
 
