@@ -59,16 +59,7 @@ namespace cinema_app
         }
         private void btn_back_first_Click(object sender, EventArgs e)
         {
-            //if (for.Controls.Count > 0) pnl_first.Controls.Clear();
-            //var form = Application.OpenForms.OfType<Form2>().FirstOrDefault();
-            //Form2 second_form = form ?? new Form2();
-            //// Establece el formulario 2 como hijo del panel en Form1
-            //second_form.TopLevel = false;
-            //second_form.FormBorderStyle = FormBorderStyle.None;
-            //second_form.Dock = DockStyle.Fill;
-            //pnl_first.Controls.Add(second_form);
-            //pnl_first.Tag = second_form;
-            //second_form.Show();
+            form1.ShowForm1();
         }
         private void btn_finish_Click(object sender, EventArgs e)
         {

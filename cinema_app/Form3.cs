@@ -21,7 +21,6 @@ namespace cinema_app
             this.form1 = form1;
         }
 
-
         private void Form3_Load(object sender, EventArgs e)
         {
             string asientos = "";
@@ -37,7 +36,6 @@ namespace cinema_app
             lbl_detail_asientos.Text = lbl_detail_asientos.Text + asientos;
             lbl_detail_total.Text = lbl_detail_total.Text + (Variables.seleccion.Asientos.Count * 1700).ToString();
 
-
             lbl_detail_nombre.Text = lbl_detail_nombre.Text + Variables.datosUsuario.Nombre;
             lbl_detail_apellido.Text = lbl_detail_apellido.Text + Variables.datosUsuario.Apellido;
             lbl_detail_telefono.Text = lbl_detail_telefono.Text + Variables.datosUsuario.Telefono; 
@@ -48,7 +46,18 @@ namespace cinema_app
         private void btn_return_Click(object sender, EventArgs e)
         {
             form1.ShowForm1();
+            Variables.datosUsuario.Nombre = "";
+            Variables.datosUsuario.Apellido = "";
+            Variables.datosUsuario.Telefono = "";
+            Variables.datosUsuario.DNI = "";
+            Variables.datosUsuario.Email = "";
+            Variables.datosUsuario.Tarjeta = "";
             this.Close();
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

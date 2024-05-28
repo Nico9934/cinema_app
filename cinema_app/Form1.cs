@@ -14,6 +14,7 @@ namespace cinema_app
     {
       
         private List<Pelicula> listaPeliculas = Variables.ObtenerPeliculas();
+      
 
         public Form1()
         {
@@ -21,46 +22,23 @@ namespace cinema_app
             cmb_film.DataSource = listaPeliculas;
             cmb_film.DisplayMember = "Titulo";
             cmb_film.SelectedIndex = 0;
-        }
-        //public void ShowForm1()
-        //{
-        //    if (pnl_first.Controls.Count > 0) pnl_first.Controls.Clear();
 
-        //    // Reiniciar el formulario actual (Form1)
-        //    Form1 newForm1 = new Form1();
-        //    newForm1.TopLevel = false;
-        //    newForm1.FormBorderStyle = FormBorderStyle.None;
-        //    newForm1.Dock = DockStyle.Fill;
-        //    pnl_first.Controls.Add(newForm1);
-        //    pnl_first.Tag = newForm1;
-        //}
+        }
 
         public void ShowForm1()
         {
-            if (pnl_first.Controls.Count > 0)
-            {
-                foreach (Control control in pnl_first.Controls)
-                {
-                    control.Dispose();
-                }
-                pnl_first.Controls.Clear();
-            }
-
-            // Crear una nueva instancia del Form1 y configurar adecuadamente
+            pnl_first.Controls.Clear();
             Form1 newForm1 = new Form1
             {
                 TopLevel = false,
                 FormBorderStyle = FormBorderStyle.None,
                 Dock = DockStyle.Fill
             };
+            newForm1.pnl_first.Dock = DockStyle.Fill;
             pnl_first.Controls.Add(newForm1.pnl_first);
-            pnl_first.Controls.Remove(newForm1.panel1);
             pnl_first.Tag = newForm1;
-            
             newForm1.Show();
         }
-
-
 
         private void cmb_film_SelectedIndexChanged(object sender, EventArgs e)
         {           
@@ -161,5 +139,37 @@ namespace cinema_app
             pnl_first.Tag = second_form;
             second_form.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        //{
+        //    foreach (Pelicula pelicula in Variables.ObtenerPeliculas())
+        //    {
+        //        string url = pelicula.Image;
+
+        //        // Crear un control PictureBox
+        //        PictureBox pictureBox = new PictureBox();
+
+        //        // Establecer el tamaño del PictureBox
+        //        pictureBox.Size = new Size(200, pictureBox.Height);
+
+        //        // Establecer la imagen del PictureBox desde la URL
+        //        pictureBox.Load(url);
+
+        //        // Ajustar el modo de visualización de la imagen
+        //        pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+
+        //        // Establecer la posición del PictureBox en el panel
+        //        pictureBox.Location = new Point(10, topMargin);
+
+        //        // Aumentar el margen superior para el siguiente PictureBox
+        //        topMargin += pictureBox.Height + 10; // Agregamos 10 píxeles de espacio entre cada PictureBox
+
+        //        // Agregar el PictureBox al panel
+        //        pnl_images_container.Controls.Add(pictureBox);
+        //    }
+        //}
     }
 }

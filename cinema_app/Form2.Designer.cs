@@ -56,6 +56,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txt_email = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -107,7 +108,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label5.Location = new System.Drawing.Point(705, 533);
+            this.label5.Location = new System.Drawing.Point(705, 503);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 24);
             this.label5.TabIndex = 4;
@@ -292,7 +293,6 @@
             this.btn_back_first.TabIndex = 21;
             this.btn_back_first.Text = "VOLVER ATRAS";
             this.btn_back_first.UseVisualStyleBackColor = false;
-            this.btn_back_first.Visible = false;
             this.btn_back_first.Click += new System.EventHandler(this.btn_back_first_Click);
             // 
             // txt_tarjeta
@@ -301,7 +301,7 @@
             this.txt_tarjeta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_tarjeta.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_tarjeta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_tarjeta.Location = new System.Drawing.Point(876, 532);
+            this.txt_tarjeta.Location = new System.Drawing.Point(872, 503);
             this.txt_tarjeta.Name = "txt_tarjeta";
             this.txt_tarjeta.Size = new System.Drawing.Size(344, 25);
             this.txt_tarjeta.TabIndex = 10;
@@ -311,7 +311,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel5.Location = new System.Drawing.Point(872, 555);
+            this.panel5.Location = new System.Drawing.Point(868, 526);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(344, 2);
             this.panel5.TabIndex = 9;
@@ -360,12 +360,23 @@
             this.txt_email.TabIndex = 9;
             this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
+            this.label9.Location = new System.Drawing.Point(830, 541);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(394, 16);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "* INGRESE LOS 16 NUMEROS DE LA TARJETA SIN ESPACIOS";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label8);
@@ -432,5 +443,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.Label label9;
     }
 }
