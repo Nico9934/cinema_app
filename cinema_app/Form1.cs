@@ -46,6 +46,7 @@ namespace cinema_app
             {
                 Pelicula peliculaSeleccionada = (Pelicula)cmb_film.SelectedItem;
                 Variables.seleccion.Titulo = peliculaSeleccionada.Titulo;
+                Variables.seleccion.Imagen = peliculaSeleccionada.Image;
                 cmb_format.Items.Clear();
                 cmb_format.Visible = true;
                 lbl_format.Visible = true;
@@ -142,34 +143,32 @@ namespace cinema_app
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pnl_images_container.Controls.Clear();
 
+            FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+            flowLayoutPanel.Padding = new Padding(50, 0, 50, 0);
+            flowLayoutPanel.Dock = DockStyle.Fill; 
+            flowLayoutPanel.AutoScroll = true; 
+            pnl_images_container.Controls.Add(flowLayoutPanel);
+
+            foreach (Pelicula pelicula in listaPeliculas)
+            {
+                if (!string.IsNullOrEmpty(pelicula.Image))
+                {
+                    try
+                    {
+                        PictureBox pictureBox = new PictureBox();
+                        pictureBox.Size = new Size(200, 250);
+                        pictureBox.Load(pelicula.Image);
+                        pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                        flowLayoutPanel.Controls.Add(pictureBox);
+                    }
+                    catch (Exception ex)
+                    {
+                        //MessageBox.Show($"Error al cargar la imagen: {pelicula.Image}\n\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
-        //{
-        //    foreach (Pelicula pelicula in Variables.ObtenerPeliculas())
-        //    {
-        //        string url = pelicula.Image;
-
-        //        // Crear un control PictureBox
-        //        PictureBox pictureBox = new PictureBox();
-
-        //        // Establecer el tamaño del PictureBox
-        //        pictureBox.Size = new Size(200, pictureBox.Height);
-
-        //        // Establecer la imagen del PictureBox desde la URL
-        //        pictureBox.Load(url);
-
-        //        // Ajustar el modo de visualización de la imagen
-        //        pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-
-        //        // Establecer la posición del PictureBox en el panel
-        //        pictureBox.Location = new Point(10, topMargin);
-
-        //        // Aumentar el margen superior para el siguiente PictureBox
-        //        topMargin += pictureBox.Height + 10; // Agregamos 10 píxeles de espacio entre cada PictureBox
-
-        //        // Agregar el PictureBox al panel
-        //        pnl_images_container.Controls.Add(pictureBox);
-        //    }
-        //}
     }
 }

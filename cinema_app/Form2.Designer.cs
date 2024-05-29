@@ -57,6 +57,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pb_selection_img = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_selection_img)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label1.Location = new System.Drawing.Point(764, 258);
+            this.label1.Location = new System.Drawing.Point(884, 258);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 24);
             this.label1.TabIndex = 0;
@@ -75,7 +77,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label2.Location = new System.Drawing.Point(646, 182);
+            this.label2.Location = new System.Drawing.Point(766, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(206, 24);
             this.label2.TabIndex = 1;
@@ -86,7 +88,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 12F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label3.Location = new System.Drawing.Point(758, 300);
+            this.label3.Location = new System.Drawing.Point(878, 300);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 24);
             this.label3.TabIndex = 2;
@@ -97,7 +99,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 12F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label4.Location = new System.Drawing.Point(753, 338);
+            this.label4.Location = new System.Drawing.Point(873, 338);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 24);
             this.label4.TabIndex = 3;
@@ -108,7 +110,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label5.Location = new System.Drawing.Point(705, 503);
+            this.label5.Location = new System.Drawing.Point(825, 503);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 24);
             this.label5.TabIndex = 4;
@@ -120,7 +122,7 @@
             this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_name.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_name.Location = new System.Drawing.Point(876, 257);
+            this.txt_name.Location = new System.Drawing.Point(996, 257);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(344, 25);
             this.txt_name.TabIndex = 5;
@@ -129,7 +131,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel1.Location = new System.Drawing.Point(876, 279);
+            this.panel1.Location = new System.Drawing.Point(996, 279);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(344, 2);
             this.panel1.TabIndex = 6;
@@ -137,7 +139,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel2.Location = new System.Drawing.Point(877, 321);
+            this.panel2.Location = new System.Drawing.Point(997, 321);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(344, 2);
             this.panel2.TabIndex = 8;
@@ -148,7 +150,7 @@
             this.txt_lastname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_lastname.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_lastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_lastname.Location = new System.Drawing.Point(877, 299);
+            this.txt_lastname.Location = new System.Drawing.Point(997, 299);
             this.txt_lastname.Name = "txt_lastname";
             this.txt_lastname.Size = new System.Drawing.Size(344, 25);
             this.txt_lastname.TabIndex = 6;
@@ -157,7 +159,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel3.Location = new System.Drawing.Point(876, 360);
+            this.panel3.Location = new System.Drawing.Point(996, 360);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(344, 2);
             this.panel3.TabIndex = 10;
@@ -168,7 +170,7 @@
             this.txt_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_phone.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_phone.Location = new System.Drawing.Point(876, 337);
+            this.txt_phone.Location = new System.Drawing.Point(996, 337);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(344, 25);
             this.txt_phone.TabIndex = 7;
@@ -177,7 +179,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel4.Location = new System.Drawing.Point(877, 400);
+            this.panel4.Location = new System.Drawing.Point(997, 400);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(344, 2);
             this.panel4.TabIndex = 8;
@@ -188,7 +190,7 @@
             this.txt_dni.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_dni.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_dni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_dni.Location = new System.Drawing.Point(877, 369);
+            this.txt_dni.Location = new System.Drawing.Point(997, 369);
             this.txt_dni.Name = "txt_dni";
             this.txt_dni.Size = new System.Drawing.Size(344, 25);
             this.txt_dni.TabIndex = 8;
@@ -199,7 +201,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 12F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label6.Location = new System.Drawing.Point(817, 379);
+            this.label6.Location = new System.Drawing.Point(937, 379);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 24);
             this.label6.TabIndex = 11;
@@ -210,7 +212,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 12F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label7.Location = new System.Drawing.Point(47, 182);
+            this.label7.Location = new System.Drawing.Point(12, 182);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(233, 24);
             this.label7.TabIndex = 13;
@@ -221,7 +223,7 @@
             this.lbl_horario.AutoSize = true;
             this.lbl_horario.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_horario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_horario.Location = new System.Drawing.Point(93, 378);
+            this.lbl_horario.Location = new System.Drawing.Point(58, 378);
             this.lbl_horario.Name = "lbl_horario";
             this.lbl_horario.Size = new System.Drawing.Size(107, 24);
             this.lbl_horario.TabIndex = 17;
@@ -232,7 +234,7 @@
             this.lbl_sala.AutoSize = true;
             this.lbl_sala.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_sala.Location = new System.Drawing.Point(131, 337);
+            this.lbl_sala.Location = new System.Drawing.Point(96, 337);
             this.lbl_sala.Name = "lbl_sala";
             this.lbl_sala.Size = new System.Drawing.Size(69, 24);
             this.lbl_sala.TabIndex = 16;
@@ -243,7 +245,7 @@
             this.lbl_formato.AutoSize = true;
             this.lbl_formato.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_formato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_formato.Location = new System.Drawing.Point(86, 299);
+            this.lbl_formato.Location = new System.Drawing.Point(51, 299);
             this.lbl_formato.Name = "lbl_formato";
             this.lbl_formato.Size = new System.Drawing.Size(114, 24);
             this.lbl_formato.TabIndex = 15;
@@ -254,7 +256,7 @@
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_titulo.Location = new System.Drawing.Point(111, 258);
+            this.lbl_titulo.Location = new System.Drawing.Point(76, 258);
             this.lbl_titulo.Name = "lbl_titulo";
             this.lbl_titulo.Size = new System.Drawing.Size(89, 24);
             this.lbl_titulo.TabIndex = 14;
@@ -265,7 +267,7 @@
             this.lbl_asientos.AutoSize = true;
             this.lbl_asientos.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_asientos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_asientos.Location = new System.Drawing.Point(86, 418);
+            this.lbl_asientos.Location = new System.Drawing.Point(51, 418);
             this.lbl_asientos.Name = "lbl_asientos";
             this.lbl_asientos.Size = new System.Drawing.Size(114, 24);
             this.lbl_asientos.TabIndex = 18;
@@ -276,7 +278,7 @@
             this.lbl_total.AutoSize = true;
             this.lbl_total.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_total.Location = new System.Drawing.Point(118, 514);
+            this.lbl_total.Location = new System.Drawing.Point(83, 514);
             this.lbl_total.Name = "lbl_total";
             this.lbl_total.Size = new System.Drawing.Size(82, 24);
             this.lbl_total.TabIndex = 19;
@@ -301,7 +303,7 @@
             this.txt_tarjeta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_tarjeta.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_tarjeta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_tarjeta.Location = new System.Drawing.Point(872, 503);
+            this.txt_tarjeta.Location = new System.Drawing.Point(992, 503);
             this.txt_tarjeta.Name = "txt_tarjeta";
             this.txt_tarjeta.Size = new System.Drawing.Size(344, 25);
             this.txt_tarjeta.TabIndex = 10;
@@ -311,7 +313,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel5.Location = new System.Drawing.Point(868, 526);
+            this.panel5.Location = new System.Drawing.Point(988, 526);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(344, 2);
             this.panel5.TabIndex = 9;
@@ -321,7 +323,7 @@
             this.btn_finish.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_finish.Font = new System.Drawing.Font("Roboto", 12F);
             this.btn_finish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.btn_finish.Location = new System.Drawing.Point(709, 604);
+            this.btn_finish.Location = new System.Drawing.Point(829, 604);
             this.btn_finish.Name = "btn_finish";
             this.btn_finish.Size = new System.Drawing.Size(512, 41);
             this.btn_finish.TabIndex = 11;
@@ -334,7 +336,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Roboto", 12F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label8.Location = new System.Drawing.Point(793, 418);
+            this.label8.Location = new System.Drawing.Point(913, 418);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 24);
             this.label8.TabIndex = 24;
@@ -343,7 +345,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.panel6.Location = new System.Drawing.Point(872, 445);
+            this.panel6.Location = new System.Drawing.Point(992, 445);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(344, 2);
             this.panel6.TabIndex = 10;
@@ -354,7 +356,7 @@
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_email.Font = new System.Drawing.Font("Roboto", 12F);
             this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.txt_email.Location = new System.Drawing.Point(872, 414);
+            this.txt_email.Location = new System.Drawing.Point(992, 414);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(344, 25);
             this.txt_email.TabIndex = 9;
@@ -364,18 +366,27 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.label9.Location = new System.Drawing.Point(830, 541);
+            this.label9.Location = new System.Drawing.Point(950, 541);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(394, 16);
             this.label9.TabIndex = 25;
             this.label9.Text = "* INGRESE LOS 16 NUMEROS DE LA TARJETA SIN ESPACIOS";
+            // 
+            // pb_selection_img
+            // 
+            this.pb_selection_img.Location = new System.Drawing.Point(498, 257);
+            this.pb_selection_img.Name = "pb_selection_img";
+            this.pb_selection_img.Size = new System.Drawing.Size(200, 250);
+            this.pb_selection_img.TabIndex = 26;
+            this.pb_selection_img.TabStop = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1351, 673);
+            this.Controls.Add(this.pb_selection_img);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.txt_email);
@@ -408,6 +419,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)(this.pb_selection_img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,5 +456,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pb_selection_img;
     }
 }

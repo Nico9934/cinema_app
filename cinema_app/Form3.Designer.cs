@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.lbl_detail_asientos = new System.Windows.Forms.Label();
             this.lbl_detail_horario = new System.Windows.Forms.Label();
             this.lbl_detail_sala = new System.Windows.Forms.Label();
@@ -41,9 +40,10 @@
             this.lbl_detail_telefono = new System.Windows.Forms.Label();
             this.lbl_detail_apellido = new System.Windows.Forms.Label();
             this.lbl_detail_nombre = new System.Windows.Forms.Label();
-            this.pnl_detail_img = new System.Windows.Forms.Panel();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_return = new System.Windows.Forms.Button();
+            this.pb_detail_img = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_detail_img)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_detail_asientos
@@ -178,15 +178,6 @@
             this.lbl_detail_nombre.TabIndex = 39;
             this.lbl_detail_nombre.Text = "NOMBRE: ";
             // 
-            // pnl_detail_img
-            // 
-            this.pnl_detail_img.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_detail_img.BackgroundImage")));
-            this.pnl_detail_img.Location = new System.Drawing.Point(157, 182);
-            this.pnl_detail_img.Name = "pnl_detail_img";
-            this.pnl_detail_img.Size = new System.Drawing.Size(165, 201);
-            this.pnl_detail_img.TabIndex = 44;
-            this.pnl_detail_img.Visible = false;
-            // 
             // btn_close
             // 
             this.btn_close.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -213,15 +204,23 @@
             this.btn_return.UseVisualStyleBackColor = false;
             this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
+            // pb_detail_img
+            // 
+            this.pb_detail_img.Location = new System.Drawing.Point(103, 100);
+            this.pb_detail_img.Name = "pb_detail_img";
+            this.pb_detail_img.Size = new System.Drawing.Size(200, 250);
+            this.pb_detail_img.TabIndex = 47;
+            this.pb_detail_img.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1244, 626);
+            this.Controls.Add(this.pb_detail_img);
             this.Controls.Add(this.btn_return);
             this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.pnl_detail_img);
             this.Controls.Add(this.lbl_detail_email);
             this.Controls.Add(this.lbl_detail_dni);
             this.Controls.Add(this.lbl_detail_telefono);
@@ -238,6 +237,7 @@
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_detail_img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,8 +257,8 @@
         private System.Windows.Forms.Label lbl_detail_telefono;
         private System.Windows.Forms.Label lbl_detail_apellido;
         private System.Windows.Forms.Label lbl_detail_nombre;
-        private System.Windows.Forms.Panel pnl_detail_img;
         public System.Windows.Forms.Button btn_close;
         public System.Windows.Forms.Button btn_return;
+        private System.Windows.Forms.PictureBox pb_detail_img;
     }
 }

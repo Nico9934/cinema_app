@@ -57,7 +57,7 @@ namespace cinema_app
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1493, 102);
+            this.panel1.Size = new System.Drawing.Size(1758, 102);
             this.panel1.TabIndex = 0;
             // 
             // panel10
@@ -83,7 +83,7 @@ namespace cinema_app
             this.cmb_film.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_film.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
             this.cmb_film.FormattingEnabled = true;
-            this.cmb_film.Location = new System.Drawing.Point(14, 90);
+            this.cmb_film.Location = new System.Drawing.Point(233, 101);
             this.cmb_film.Name = "cmb_film";
             this.cmb_film.Size = new System.Drawing.Size(265, 32);
             this.cmb_film.TabIndex = 7;
@@ -97,7 +97,7 @@ namespace cinema_app
             this.cmb_format.Font = new System.Drawing.Font("Roboto", 12F);
             this.cmb_format.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
             this.cmb_format.FormattingEnabled = true;
-            this.cmb_format.Location = new System.Drawing.Point(293, 90);
+            this.cmb_format.Location = new System.Drawing.Point(512, 101);
             this.cmb_format.Name = "cmb_format";
             this.cmb_format.Size = new System.Drawing.Size(238, 32);
             this.cmb_format.TabIndex = 8;
@@ -112,7 +112,7 @@ namespace cinema_app
             this.cmb_sala.Font = new System.Drawing.Font("Roboto", 12F);
             this.cmb_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
             this.cmb_sala.FormattingEnabled = true;
-            this.cmb_sala.Location = new System.Drawing.Point(550, 90);
+            this.cmb_sala.Location = new System.Drawing.Point(769, 101);
             this.cmb_sala.Name = "cmb_sala";
             this.cmb_sala.Size = new System.Drawing.Size(212, 32);
             this.cmb_sala.TabIndex = 9;
@@ -127,7 +127,7 @@ namespace cinema_app
             this.cmb_hour.Font = new System.Drawing.Font("Roboto", 12F);
             this.cmb_hour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
             this.cmb_hour.FormattingEnabled = true;
-            this.cmb_hour.Location = new System.Drawing.Point(785, 90);
+            this.cmb_hour.Location = new System.Drawing.Point(1004, 101);
             this.cmb_hour.Name = "cmb_hour";
             this.cmb_hour.Size = new System.Drawing.Size(225, 32);
             this.cmb_hour.TabIndex = 10;
@@ -140,7 +140,7 @@ namespace cinema_app
             this.lbl_film.AutoSize = true;
             this.lbl_film.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_film.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_film.Location = new System.Drawing.Point(34, 48);
+            this.lbl_film.Location = new System.Drawing.Point(253, 59);
             this.lbl_film.Name = "lbl_film";
             this.lbl_film.Size = new System.Drawing.Size(206, 24);
             this.lbl_film.TabIndex = 11;
@@ -151,7 +151,7 @@ namespace cinema_app
             this.lbl_format.AutoSize = true;
             this.lbl_format.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_format.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_format.Location = new System.Drawing.Point(289, 48);
+            this.lbl_format.Location = new System.Drawing.Point(508, 59);
             this.lbl_format.Name = "lbl_format";
             this.lbl_format.Size = new System.Drawing.Size(104, 24);
             this.lbl_format.TabIndex = 12;
@@ -163,7 +163,7 @@ namespace cinema_app
             this.lbl_sala.AutoSize = true;
             this.lbl_sala.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_sala.Location = new System.Drawing.Point(546, 48);
+            this.lbl_sala.Location = new System.Drawing.Point(765, 59);
             this.lbl_sala.Name = "lbl_sala";
             this.lbl_sala.Size = new System.Drawing.Size(163, 24);
             this.lbl_sala.TabIndex = 13;
@@ -175,7 +175,7 @@ namespace cinema_app
             this.lbl_hour.AutoSize = true;
             this.lbl_hour.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_hour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_hour.Location = new System.Drawing.Point(783, 48);
+            this.lbl_hour.Location = new System.Drawing.Point(1002, 59);
             this.lbl_hour.Name = "lbl_hour";
             this.lbl_hour.Size = new System.Drawing.Size(188, 24);
             this.lbl_hour.TabIndex = 14;
@@ -187,7 +187,7 @@ namespace cinema_app
             this.lbl_asiento.AutoSize = true;
             this.lbl_asiento.Font = new System.Drawing.Font("Roboto", 12F);
             this.lbl_asiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.lbl_asiento.Location = new System.Drawing.Point(1036, 48);
+            this.lbl_asiento.Location = new System.Drawing.Point(1255, 59);
             this.lbl_asiento.Name = "lbl_asiento";
             this.lbl_asiento.Size = new System.Drawing.Size(183, 24);
             this.lbl_asiento.TabIndex = 15;
@@ -199,7 +199,7 @@ namespace cinema_app
             this.btn_asiento.BackColor = System.Drawing.SystemColors.ControlText;
             this.btn_asiento.Font = new System.Drawing.Font("Roboto", 12F);
             this.btn_asiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.btn_asiento.Location = new System.Drawing.Point(1053, 84);
+            this.btn_asiento.Location = new System.Drawing.Point(1272, 95);
             this.btn_asiento.Name = "btn_asiento";
             this.btn_asiento.Size = new System.Drawing.Size(147, 43);
             this.btn_asiento.TabIndex = 16;
@@ -213,7 +213,7 @@ namespace cinema_app
             this.btn_continue.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_continue.Font = new System.Drawing.Font("Roboto", 12F);
             this.btn_continue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(182)))), ((int)(((byte)(222)))));
-            this.btn_continue.Location = new System.Drawing.Point(886, 174);
+            this.btn_continue.Location = new System.Drawing.Point(1105, 185);
             this.btn_continue.Name = "btn_continue";
             this.btn_continue.Size = new System.Drawing.Size(173, 41);
             this.btn_continue.TabIndex = 17;
@@ -236,16 +236,16 @@ namespace cinema_app
             this.pnl_first.Controls.Add(this.cmb_hour);
             this.pnl_first.Controls.Add(this.lbl_sala);
             this.pnl_first.Controls.Add(this.lbl_format);
-            this.pnl_first.Location = new System.Drawing.Point(177, 138);
+            this.pnl_first.Location = new System.Drawing.Point(91, 143);
             this.pnl_first.Name = "pnl_first";
-            this.pnl_first.Size = new System.Drawing.Size(1280, 907);
+            this.pnl_first.Size = new System.Drawing.Size(1636, 907);
             this.pnl_first.TabIndex = 18;
             // 
             // pnl_images_container
             // 
-            this.pnl_images_container.Location = new System.Drawing.Point(71, 270);
+            this.pnl_images_container.Location = new System.Drawing.Point(52, 262);
             this.pnl_images_container.Name = "pnl_images_container";
-            this.pnl_images_container.Size = new System.Drawing.Size(1156, 432);
+            this.pnl_images_container.Size = new System.Drawing.Size(1553, 432);
             this.pnl_images_container.TabIndex = 18;
             // 
             // Form1
@@ -253,7 +253,7 @@ namespace cinema_app
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1493, 1034);
+            this.ClientSize = new System.Drawing.Size(1758, 1034);
             this.Controls.Add(this.pnl_first);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);

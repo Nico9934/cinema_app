@@ -36,6 +36,9 @@ namespace cinema_app
             lbl_detail_asientos.Text = lbl_detail_asientos.Text + asientos;
             lbl_detail_total.Text = lbl_detail_total.Text + (Variables.seleccion.Asientos.Count * 1700).ToString();
 
+            pb_detail_img.ImageLocation = Variables.seleccion.Imagen.ToString();
+            pb_detail_img.SizeMode = PictureBoxSizeMode.StretchImage;
+
             lbl_detail_nombre.Text = lbl_detail_nombre.Text + Variables.datosUsuario.Nombre;
             lbl_detail_apellido.Text = lbl_detail_apellido.Text + Variables.datosUsuario.Apellido;
             lbl_detail_telefono.Text = lbl_detail_telefono.Text + Variables.datosUsuario.Telefono; 
@@ -52,6 +55,7 @@ namespace cinema_app
             Variables.datosUsuario.DNI = "";
             Variables.datosUsuario.Email = "";
             Variables.datosUsuario.Tarjeta = "";
+            
             this.Close();
         }
 

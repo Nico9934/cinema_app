@@ -21,7 +21,7 @@ namespace cinema_app
             string asientos = "";
             foreach (string asiento in Variables.seleccion.Asientos)
             {
-                asientos += asiento;
+                asientos += " / " + asiento;
             }
             lbl_titulo.Text = "TITULO: " + Variables.seleccion.Titulo;  
             lbl_formato.Text = "FORMATO: " + Variables.seleccion.Formato;
@@ -30,6 +30,12 @@ namespace cinema_app
             lbl_asientos.Text = "ASIENTOS: " + asientos;
             lbl_total.Text = "TOTAL: $" + (Variables.seleccion.Asientos.Count * 1700).ToString();
 
+            pb_selection_img.ImageLocation = Variables.seleccion.Imagen.ToString();
+            pb_selection_img.SizeMode = PictureBoxSizeMode.StretchImage;
+            try
+            {
+                pb_selection_img.Load(Variables.seleccion.Imagen);
+            } catch{ }
             Variables.datosUsuario.Tarjeta = txt_tarjeta.Text;
         }
 

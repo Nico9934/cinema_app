@@ -12,6 +12,7 @@ namespace cinema_app
         public string Formato { get; set; }
         public string Sala { get; set; }
         public string Horario { get; set; }
+        public string Imagen { get; set; }
         public List<string> Asientos { get; set; }
     }
 }
