@@ -29,9 +29,12 @@ El proyecto esta creado en su totalidad con WindowsForms. C# y .NET como framewo
 
 ***
 
-### Referencias 🕹️
-Este proyecto forma parte de la Guia N° 7 de la materia de Seminario de programación, dictada por los profesores Ezequiel Pacifico y Silvana Landini, de la carrera de Analisis, desarrollo y programación de aplicaciones. Materia dada en 2° año, en el ISFD N°93, Ciudad de San Vicente, BS.AS
-
-
+## 🌐 Referencias
+### Materia: Seminario de programación 
+### Profesores a cargo: 
+  - Ezequiel Pacifico
+  - Silvana Landini
+### Carrera: Analisis, desarrollo y programación de aplicaciones. 
+### Instituto: ISFD N°93, San Vicente, Buenos Aires
 
 
